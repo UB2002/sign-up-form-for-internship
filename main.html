@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="cvstyle.css">
+</head>
+<body>
+	<div class="container">
+		<form>
+			<label>
+				First Name
+				<input type="text" name="firstname" required>
+			</label>
+			<label>
+				Last Name
+				<input type="text" name="lastname" required>
+			</label>
+			<label>
+				Email
+				<input type="email" name="email" required>
+			</label>
+			<label>
+				UserName (Upto 8 alphanumeric Characters)
+				<input type="text" name="username" pattern="[A-Za-z0-9]{1,8}" required>
+			</label>
+			<label>
+				Password (Upto 8 alphanumeric Characters, 1 special character)
+				<input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+]).{8,}" required>
+			</label>
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
